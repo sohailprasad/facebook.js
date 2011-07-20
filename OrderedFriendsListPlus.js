@@ -25,6 +25,8 @@ OrderedFriendsList = function() {
             return 0;
         },
         getList: function() {
+            //This is the only line that was changed from facebook's code.
+            //Make sure the list returned only containst user ids from the AvailableList
             return AvailableList.getAvailableIDs();
         },
         getRank: function(d) {
