@@ -3,81 +3,77 @@
 <head>
   <meta charset='utf-8'>
 
-  <title>TalAter/facebook.js @ GitHub</title>
+  <title>Fix Facebook Chat to Only Show Friends Currently Online </title>
 
   <style type="text/css">
     body {
-      margin-top: 1.0em;
-      background-color: #84d823;
       font-family: Helvetica, Arial, FreeSans, san-serif;
-      color: #000000;
+      color: #fff;
+      margin: 0 0;
+      padding: 0 0;
+      background-color: #272822;
     }
     #container {
+      background: #272822 url('http://www.bigspeedpro.com/images/partners/facebookjs/facebook_chat_broken.png') repeat-y top left;
       margin: 0 auto;
-      width: 700px;
+      width: 990px;
+      min-height: 1100px;
     }
-    h1 { font-size: 3.8em; color: #7b27dc; margin-bottom: 3px; }
+    #container-inner {
+      background: url('http://www.bigspeedpro.com/images/partners/facebookjs/facebook_chat_fixed.png') repeat-y top right;
+      min-height: 1100px;
+    }
+    #container-text {
+      width: 570px;
+      margin: 0 auto 100px;
+    }
+    #facebook_is_broken {
+      margin-top: 10px;
+    }
+    h1 { font-size: 3.6em; color: #7fe22b; margin: 0 0 3px; }
     h1 .small { font-size: 0.4em; }
-    h1 a { text-decoration: none }
-    h2 { font-size: 1.5em; color: #7b27dc; }
-    h3 { text-align: center; color: #7b27dc; }
-    a { color: #7b27dc; }
-    .description { font-size: 1.2em; margin-bottom: 30px; margin-top: 30px; font-style: italic;}
-    .download { float: right; }
-    pre { background: #000; color: #fff; padding: 15px;}
-    hr { border: 0; width: 80%; border-bottom: 1px solid #aaa}
-    .footer { text-align:center; padding-top:30px; font-style: italic; }
+    h1 a { text-decoration: none; color: #627aad; }
+    h2 { font-size: 1.5em; }
+    h3 { text-align: center; color: #7fe22b; }
+    p { font-size: 0.9em;}
+    a { color: #66d9ef; }
+    .description { font-size: 1.4em; margin-bottom: 30px; margin-top: 10px; font-style: italic; font-weight: bold;}
+    .footer { text-align:center; padding-top: 10px; margin-top:25px; font-style: italic; border-top: 1px solid #;}
+    .downloadLink { text-align:center; display: block; margin: 30px 0 10px 0;}
   </style>
 </head>
 
 <body>
-  <a href="http://github.com/TalAter/facebook.js"><img style="position: absolute; top: 0; right: 0; border: 0;" src="http://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub" /></a>
-
   <div id="container">
+  <div id="container-inner">
+  <div id="container-text">
 
-    <div class="download">
-      <a href="http://github.com/TalAter/facebook.js/zipball/master">
-        <img border="0" width="90" src="http://github.com/images/modules/download/zip.png"></a>
-      <a href="http://github.com/TalAter/facebook.js/tarball/master">
-        <img border="0" width="90" src="http://github.com/images/modules/download/tar.png"></a>
-    </div>
-
-    <h1><a href="http://github.com/TalAter/facebook.js">facebook.js</a>
-      <span class="small">by <a href="http://github.com/TalAter">TalAter</a></span></h1>
+    <h1><a href="https://github.com/TalAter/facebook.js/raw/master/facebookjs.exe">facebook.js</a>
+      <span class="small">by <a href="http://github.com/TalAter">Tal Ater</a></span></h1>
 
     <div class="description">
       Fix Facebook Chat to Only Show Friends Currently Online
     </div>
 
-    <p>It used to be easy to see which of your friends were online in facebook. But these days, the facebook chat window is cluttered with the friends facebook thinks you should chat with, ignoring who is online and who isn’t.
-Facebook chat is broken.
-This project fixes facebook chat</p><h2>Install</h2>
-<p>I’ve created an easy to use browser addon which you can run and have it fix the chat for you automatically.
+    <p>It used to be easy to see which of your friends were online in facebook. But these days, the facebook chat window is cluttered with the friends facebook thinks you should chat with, ignoring who is online and who isn’t.</p>
+    <img src="http://www.bigspeedpro.com/images/partners/facebookjs/facebook_is_broken.png" id="facebook_is_broken" />
 
-Or for the more techno-geeky crowd, you can try it out by getting the code directly from GitHub, and running it in the browser’s console.</p>
-<h2>Authors</h2>
-<p>Tal Ater (tal@talater.com)<br/><br/>      </p>
-<h2>Contact</h2>
-<p>Tal Ater (tal@talater.com)<br/>      </p>
+    <a href="https://github.com/TalAter/facebook.js/raw/master/facebookjs.exe" class="downloadLink"><img src="http://www.bigspeedpro.com/images/partners/facebookjs/facebook_fix_download.png" /></a>
+
+    <p>In my spare time, I like to dig through facebook’s code, finding hidden gems and secrets (last year I was the first to expose their video chat plans with Skype). So after hearing everyone complain about how broken facebook chat has become, I decided to challenge myself to fix it.</p>
+    <h2>It turns out there’s an easy fix, and it is buried right in facebook’s own code.</h2>
 
 
-    <h2>Download</h2>
-    <p>
-      You can download this project in either
-      <a href="http://github.com/TalAter/facebook.js/zipball/master">zip</a> or
-      <a href="http://github.com/TalAter/facebook.js/tarball/master">tar</a> formats.
-    </p>
-    <p>You can also clone the project with <a href="http://git-scm.com">Git</a>
-      by running:
-      <pre>$ git clone git://github.com/TalAter/facebook.js</pre>
-    </p>
+    <p>I’ve created an <a href="https://github.com/TalAter/facebook.js/raw/master/facebookjs.exe">easy to use browser addon</a> which you can run and have it fix the chat for you automatically.</p>
+    <p>Or for the more techno-geeky crowd, you can try it out by getting the <a href="https://github.com/TalAter/facebook.js">code directly from GitHub</a>, and running it in the browser’s console.</p>
 
     <div class="footer">
       get the source code on GitHub : <a href="http://github.com/TalAter/facebook.js">TalAter/facebook.js</a>
     </div>
 
   </div>
-
-  
+  </div>
+  </div>
+ 
 </body>
 </html>
